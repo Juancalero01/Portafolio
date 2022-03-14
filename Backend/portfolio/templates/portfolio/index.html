@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{% static '/img/favicon.ico' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Portfolio</title>
 
@@ -25,29 +25,35 @@
         </div>
         <ul>
             <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
             <li><a href="#">Projects</a></li>
-            <li><a href="#">About me</a></li>
+            <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <div class="main-container">
         <div class="main-title">
             <h1>Hi, I´m Juan</h1>
-            <h2>Python developer</h2>
-            <h3>Programmer and designer for you <i class="fa-solid fa-heart"></i></h3>
+            <h2>Programmer</h2>
+            <p>I am student of software development, web development and digital applications.</p>
             <ul>
                 <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-github-square"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
             </ul>
+            <div>
+                <a href="#"> Scroll down <i class="fa-solid fa-angle-down"></i></a>
+            </div>
         </div>
         <div class="main-image">
-            <img src="{% static 'img/ilustration.png' %}" alt="">
+            <img src="{% static 'img/me.png' %}" alt="">
         </div>
     </div>
-    {% comment %} <div class="projects-container">
-        Projects
+    {% comment %} <div class="about-container">
+        <h1>About me</h1>
+        <p>My introduction</p>
     </div> {% endcomment %}
 </body>
 </html>

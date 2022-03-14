@@ -9,26 +9,27 @@
 
 .nav-container{
     display: flex;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: 80px;
     position: sticky;
     top: 0;
     background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px);
 }
 
 .nav-logo{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 
 .nav-logo a{
-    width: 100%;
-    text-align: center;
+    width: 80%;
+    margin: 0 auto;
     color: #494949;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
@@ -36,17 +37,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 .nav-container li{
     display: flex;
     align-items: center;
-    margin: 0 30px;
+    margin: 0 20px;
 }
 .nav-container ul li a{
     color: #494949;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .nav-container ul li a:hover{
     color: #000000;
@@ -65,7 +66,8 @@
 
 .main-container{
     height: calc(100vh - 80px);
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
 }
 .main-title{
@@ -77,22 +79,49 @@
     align-items: center;
 }
 
-.main-title h1,h2,h3{
-    width: 50%;
+.main-title h1,h2,p{
+    width: 80%;
+    margin: 0 auto;
 }
 
+.main-title h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.main-title h2{
+    color: #494949;
+    font-size: 25px;
+    font-weight: 500;
+}
+.main-title p{
+    color: #494949;
+    font-size: 18px;
+    font-weight: 300;
+}
 .main-title ul{
     display: flex;
-    width: 50%;
+    width: 80%;
+    margin: 0 auto;
 }
 .main-title li{
-    margin: 0 10px 0 0;
+    margin: 10px 10px 10px 0px;
 }
 .main-title a{
     color: #000;
     font-size: 30px;
 }
 
+.main-title div{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.main-title div a{
+    font-size: 14px;
+    font-weight: 500;
+    transition: width 1s, height 1s, transform 2s;
+}
 
 
 .main-image{
@@ -104,14 +133,13 @@
 }
 
 .main-image img{
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
 }
 
-
-/* 
-
-.projects-container{
+/* .about-container{
     height: 100vh;
     width: 100%;
+    width: 80%;
+    margin: 0 auto;
 } */
