@@ -6,140 +6,251 @@
     text-decoration: none;
     list-style: none;
 }
-
-.nav-container{
+/* NAVBAR */
+.navbar-container{
     display: flex;
-    width: 80%;
-    margin: 0 auto;
     height: 80px;
+    width: 100%;
     position: sticky;
     top: 0;
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.900);
+    backdrop-filter: blur(6px); 
 }
-
-.nav-logo{
+.navbar-container .navbar-logo{
     display: flex;
     align-items: center;
     width: 100%;
+    margin: 0 0 0 100px;
 }
-
-.nav-logo a{
-    width: 80%;
-    margin: 0 auto;
+.navbar-container .navbar-logo a{
     color: #494949;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
 }
-
-
-.nav-container ul{
+.navbar-container ul{
+    margin: 0 100px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.nav-container li{
+.navbar-container ul li{
     display: flex;
     align-items: center;
     margin: 0 20px;
 }
-.nav-container ul li a{
+.navbar-container ul li a{
     color: #494949;
     font-size: 14px;
     font-weight: 500;
 }
-.nav-container ul li a:hover{
+.navbar-container ul li a:hover{
     color: #000000;
     transition: .5s;
 }
-
-.nav-boton{
+.navbar-container .navbar-button{
     font-size: 20px;
     color: #ffffff;
     cursor: pointer;
     display: none;
 }
-#nav-click{
+#navbar-click{
     display: none;
 }
 
-.main-container{
+/* HOME */
+.home-container{
     height: calc(100vh - 80px);
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
 }
-.main-title{
-    width: 50%;
+.home-container .home-title{
     height: 100%;
+    width: 100%;
+    margin: 0 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home-container .home-title h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.home-container .home-title h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.home-container .home-title p{
+    font-size: 18px;
+    font-weight: 300;
+}
+.home-container .home-title ul{
+    display: flex;
+}
+.home-container .home-title ul li{
+    margin: 10px 10px 10px 0px; 
+}
+.home-container .home-title ul li a{
+    color: #000000;
+    font-size: 30px; 
+}
+.home-container .home-title a{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+}
+.home-container .home-image{
+    height: 100%;
+    width: 100%;
+    margin: 0 100px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-container .home-image img{
+    height: 360px;
+    width: 360px;
+}
+
+
+.about-container{
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.about-container .about-title{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.main-title h1,h2,p{
-    width: 80%;
-    margin: 0 auto;
+.about-container .about-title h1{
+    font-size: 40px;
+    font-weight: 600;
 }
-
-.main-title h1{
-    font-size: 50px;
-    font-weight: 700;
-}
-.main-title h2{
-    color: #494949;
-    font-size: 25px;
-    font-weight: 500;
-}
-.main-title p{
+.about-container .about-title p{
     color: #494949;
     font-size: 18px;
-    font-weight: 300;
-}
-.main-title ul{
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-}
-.main-title li{
-    margin: 10px 10px 10px 0px;
-}
-.main-title a{
-    color: #000;
-    font-size: 30px;
-}
-
-.main-title div{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-.main-title div a{
-    font-size: 14px;
     font-weight: 500;
-    transition: width 1s, height 1s, transform 2s;
 }
-
-
-.main-image{
-    width: 50%;
+.about-container .about-description{
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.main-image img{
-    height: 350px;
-    width: 350px;
+.about-container .about-description .about-box{
+    display: flex;
+    min-height: 500px;
+    margin: 0 100px;
+}
+.about-container .about-description .about-box .about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+}
+.about-container .about-description .about-box .about-image img{
+    height: 280px;
+    width: 280px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.20);    
+    border-radius: 5px;
+}
+.about-container .about-description .about-box .about-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-container .about-description .about-box .about-text p{
+    color: #494949;
+    font-size: 18px;
+    font-weight: 500;
+}
+.about-container .about-description .about-box .about-text a{
+    width: 140px;
+    height: 40px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #ff1b49;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.about-container .about-description .about-box .about-text a:hover{
+    background-color: #dc143c;
 }
 
-/* .about-container{
-    height: 100vh;
+
+.skills-container{
+    height: calc(100vh - 80px);
     width: 100%;
-    width: 80%;
-    margin: 0 auto;
-} */
+    display: flex;
+    flex-direction: column;
+}
+.skills-container .skills-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills-container .skills-title h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.skills-container .skills-title p{
+    color: #494949;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.projects-container{
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.projects-container .projects-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects-container .projects-title h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.projects-container .projects-title p{
+    color: #494949;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.contact-container{
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-container .contact-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container .contact-title h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.contact-container .contact-title p{
+    color: #494949;
+    font-size: 18px;
+    font-weight: 500;
+}
