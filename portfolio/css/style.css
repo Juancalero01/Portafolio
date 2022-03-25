@@ -30,7 +30,7 @@
 .navbar-container ul{
     margin: 0 100px 0 0;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     width: 100%;
 }
@@ -46,7 +46,8 @@
 }
 .navbar-container ul li a:hover{
     color: #000000;
-    transition: .5s;
+    transition: .6s;
+    transform: translateY(-0.25em);
 }
 .navbar-container .navbar-button{
     font-size: 20px;
@@ -112,7 +113,6 @@
     width: 360px;
 }
 
-
 .about-container{
     height: calc(100vh - 80px);
     width: 100%;
@@ -145,25 +145,15 @@
     display: flex;
     min-height: 500px;
     margin: 0 100px;
-}
-.about-container .about-description .about-box .about-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100%;
-}
-.about-container .about-description .about-box .about-image img{
-    height: 280px;
-    width: 280px;
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.20);    
     border-radius: 5px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.20);  
 }
+
 .about-container .about-description .about-box .about-text{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0 100px;
 }
 .about-container .about-description .about-box .about-text p{
     color: #494949;

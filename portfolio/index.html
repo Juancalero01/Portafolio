@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="{% static '/img/favicon.ico' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico'">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 
 </head>
 
 <body>
-    {% comment %} Navbar {% endcomment %}
     <nav class="navbar-container">
         <input type="checkbox" id="navbar-click">
         <label for="navbar-click" class="navbar-button"><i class="fa-solid fa-bars-staggered fa-2x"></i></label>
@@ -29,12 +27,9 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Skills</a></li>
             <li><a href="#">Projects</a></li>
-            <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-
-    {% comment %} Home page {% endcomment %}
     <div class="home-container">
         <div class="home-title">
             <h1>Hi, I'm Juan Calero</h1>
@@ -49,35 +44,29 @@
             <a href="#"> Scroll down <i class="fa-solid fa-angle-down"></i></a>
         </div>
         <div class="home-image">
-            <img src="{% static 'img/me.png' %}" alt="me">
+            <img src="img/me.png" alt="me">
         </div>
     </div>
 
-    {% comment %} About me page {% endcomment %}
     <div class="about-container">
         <div class="about-title">
             <h1>About me</h1>
             <p>My introduction</p>
         </div>
         <div class="about-description">
-            <div class="about-box"> 
-                <div class="about-image">
-                    <img src=" {% static 'img/me_2.png' %}" alt="me_2">
-                </div>
+            <div class="about-box">
                 <div class="about-text">
                     <p>
                         I am 21 years old, I am currently completing my studies in
                         the world of software development.
                         I consider myself a creative, curious person, eager to continue learning new skills.
                     </p>
-                    <a href="{% static 'documents/curriculum.pdf' %}" download>Download cv <i class="fa-solid fa-download"></i></a>
+                    <a href="documents/curriculum.pdf" download>Download cv <i class="fa-solid fa-download"></i></a>
                 </div>
             </div>
         </div>
     </div>
 
-
-    {% comment %} Skills {% endcomment %}
     <div class="skills-container">
         <div class="skills-title">
             <h1>Skills</h1>
@@ -85,7 +74,6 @@
         </div>
     </div>
 
-    {% comment %} Projects {% endcomment %}
     <div class="projects-container">
         <div class="projects-title">
             <h1>Projects</h1>
@@ -93,7 +81,6 @@
         </div>
     </div>
 
-    {% comment %} Contact {% endcomment %}
     <div class="contact-container">
         <div class="contact-title">
             <h1>Contact</h1>
@@ -101,4 +88,5 @@
         </div>
     </div>
 </body>
+
 </html>
