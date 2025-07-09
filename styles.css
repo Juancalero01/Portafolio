@@ -1,0 +1,76 @@
+:root {
+  --github-bg: #0d1117;
+  --github-border: #30363d;
+  --github-card: #161b22;
+  --github-text: #e6edf3;
+  --github-text-secondary: #7d8590;
+  --github-accent: #58a6ff;
+  --github-green: #39d353;
+}
+
+body {
+  background-color: var(--github-bg) !important;
+  color: var(--github-text) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif;
+}
+
+.github-card {
+  background-color: var(--github-card);
+  border: 1px solid var(--github-border);
+  border-radius: 6px;
+}
+
+.profile-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 1px solid var(--github-border);
+}
+
+.skill-badge {
+  background-color: var(--github-text-secondary);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.location-text,
+.email-text {
+  color: var(--github-text-secondary);
+  font-size: 14px;
+}
+
+.bio-text {
+  color: var(--github-text);
+  line-height: 1.5;
+}
+
+.section-title {
+  color: var(--github-text);
+  font-weight: 600;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--github-border);
+}
+
+.contact-link {
+  color: var(--github-accent);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.stats-number {
+  color: var(--github-text);
+  font-weight: 600;
+}
+
+.stats-label {
+  color: var(--github-text-secondary);
+  font-size: 14px;
+}
